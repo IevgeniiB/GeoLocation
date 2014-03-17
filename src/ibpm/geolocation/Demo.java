@@ -41,7 +41,7 @@ public class Demo {
 		
 		System.out.println("List of all nearby locations");
 		System.out.println("-------------");
-		loc.queryNearbyPlaces(LocationType.RESTAURANT, Integer.parseInt(args[1]));
+		loc.queryNearbyPlaces(LocationType.BANK, Integer.parseInt(args[1]));
 		Map<String, Map<String, String>> nearby = loc.getNearbyPlacesMap();
 		Iterator<Entry<String, Map<String, String>>> nearbyIter = nearby.entrySet().iterator();
 		while(nearbyIter.hasNext()) {
